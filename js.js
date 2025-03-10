@@ -41,10 +41,6 @@ function getBotResponse(input)
     {
        return "Goodbye! have a great day"
     }
-    else if(inputboxvalue.includes("nigga")||inputboxvalue.includes("nigger"))
-    {
-        return"shut up nigger"
-    }
     else
     {
         return "I'm not sure to respond to that.try asking somthing else!"
@@ -57,12 +53,12 @@ window.onload = function()
     let chathistory = localStorage.getItem("chathistory")
     if(chathistory)
     {
-        chatbox.innerHTML += chathistory
+        chatbox.innerHTML = chathistory
     }
 }
 function savechat()
 {
     let chatbox = document.getElementById("chatbox").innerHTML;
     localStorage.setItem("chathistory",chatbox)
-    chatbox.innerHTML = ` <p class="bot-message">hello my nigga</p>`
+    chatbox.innerHTML = ` <p class="bot-message">🤗 hello</p>`
 }
