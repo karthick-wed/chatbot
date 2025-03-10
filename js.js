@@ -1,4 +1,3 @@
-
 let chatbox = document.getElementById("chatbox");
 
 function sendMessage() {
