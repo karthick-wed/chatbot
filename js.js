@@ -1,5 +1,3 @@
-let chatbox = document.getElementById("chatbox");
-
 function sendMessage() {
     let inputbox = document.getElementById("user-input").value;
     if (inputbox === "") return;
@@ -48,7 +46,7 @@ function getBotResponse(input)
 }
 window.onload = function()
 {
-    let chatbox = document.getElementById("chatbox");
+    let chatbox = document.getElementById("chatbox")
     let chathistory = localStorage.getItem("chathistory")
     if(chathistory)
     {
@@ -57,7 +55,6 @@ window.onload = function()
 }
 function savechat()
 {
-    let chatbox = document.getElementById("chatbox").innerHTML;
-    localStorage.setItem("chathistory",chatbox)
-    chatbox.innerHTML = ` <p class="bot-message">🤗 hello</p>`
+    let chatbox = document.getElementById("chatbox");
+    localStorage.setItem("chathistory",chatbox.innerHTML)
 }
